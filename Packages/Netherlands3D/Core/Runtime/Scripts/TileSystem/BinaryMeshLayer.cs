@@ -93,7 +93,8 @@ namespace Netherlands3D.TileSystem
 				Debug.Log("if " + url);
 			} else
 			{
-				url = System.IO.Path.Combine(Application.streamingAssetsPath, url);
+				url = System.IO.Path.Combine(Application.streamingAssetsPath, Datasets[lod].path);
+				Debug.Log("streamingassetspath: " + Application.streamingAssetsPath);
 				Debug.Log("else " + url);
 			}
 
