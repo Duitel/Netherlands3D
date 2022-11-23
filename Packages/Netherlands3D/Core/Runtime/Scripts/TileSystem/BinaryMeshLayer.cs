@@ -92,7 +92,7 @@ namespace Netherlands3D.TileSystem
 				url = Datasets[lod].path;
 			} else
 			{
-				System.IO.Path.Combine(Application.streamingAssetsPath, url);
+				url = System.IO.Path.Combine(Application.streamingAssetsPath, url);
 			}
 
 			url = url.ReplaceXY(tileChange.X, tileChange.Y);
