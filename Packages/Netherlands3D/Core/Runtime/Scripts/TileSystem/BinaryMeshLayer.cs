@@ -90,11 +90,11 @@ namespace Netherlands3D.TileSystem
 			if (Datasets[lod].path.StartsWith("https://") || Datasets[lod].path.StartsWith("file://"))
 			{
 				url = Datasets[lod].path;
-				Debug.Log("if " + url)
+				Debug.Log("if " + url);
 			} else
 			{
 				url = System.IO.Path.Combine(Application.streamingAssetsPath, url);
-				Debug.Log("else " + url)
+				Debug.Log("else " + url);
 			}
 
 			url = url.ReplaceXY(tileChange.X, tileChange.Y);
