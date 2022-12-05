@@ -169,6 +169,13 @@ namespace Netherlands3D.Minimap
 		}
 		
 		/// <summary>
+		/// Resetting the memory of the minimap by resetting the tileLayers.
+		/// </summary>
+		public void ResetTileLayers(){
+			tileLayers = new Dictionary<int, Dictionary<Vector2, Tile>>();
+		}
+		
+		/// <summary>
 		/// Clamp the minimap
 		/// </summary>
 		public void Clamp()
