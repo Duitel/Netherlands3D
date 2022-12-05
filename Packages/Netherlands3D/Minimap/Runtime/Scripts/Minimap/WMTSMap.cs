@@ -169,9 +169,9 @@ namespace Netherlands3D.Minimap
 		}
 		
 		/// <summary>
-		/// Resetting the minimap.
+		/// Refresh the minimap.
 		/// </summary>
-		public void Reset(){
+		public void Refresh(){
 			foreach (var tile in tileLayers[layerIndex])
 			{
 				Destroy(tile.Value.gameObject);
